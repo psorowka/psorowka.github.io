@@ -11,6 +11,5 @@ tagline: A developers daily thoughts
       <small>{{ post.date | date_to_string }}</small></h2>
 
       {{ content }}
-      
-      
+   </article>
 {% endfor %}
