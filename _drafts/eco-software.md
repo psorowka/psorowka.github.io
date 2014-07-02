@@ -6,7 +6,6 @@ tagline: ""
 tags: []
 ---
 
-{% include JB/setup %}
 
 - computers get faster, programmers get lazier
 - coding gets easier, programmers get dumber

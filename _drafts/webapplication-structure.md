@@ -5,7 +5,6 @@ category : web
 tagline: ""
 tags : []
 ---
-{% include JB/setup %}
 
 Dilemma:
 
