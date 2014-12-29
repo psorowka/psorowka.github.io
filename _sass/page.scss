@@ -5,20 +5,18 @@ body {
 }
 .navigation-wrapper {
 	@include container;
-	padding: 2em 0 1em;
 	font-family: $heading-font;
 	font-weight: 700;
 	text-transform: uppercase;
 	@include clearfix;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); 
 }
 .site-name {
-	@include grid(12,10);
+	@include grid(12,5);
 	@include prefix(12,1);
-	@include suffix(12,1);
-	margin-bottom: 1em;
-	float: none;
 	display: block;
 	@include font-rem(24);
+	padding-top:0.5rem;
 	@media #{$small} {
 		@include grid(12,2);
 		@include prefix(12,0.5);
@@ -31,13 +29,11 @@ body {
 	}
 }
 .top-navigation {
-	@include grid(12,10);
+	@include grid(12,4);
 	@include prefix(12,1);
-	@include suffix(12,1);
-	margin-bottom: 1em;
-	float: none;
 	display: block;
 	@media #{$small} {
+		margin-top: 3rem;
 		@include grid(12,9);
 		@include prefix(12,0);
 		@include suffix(12,0);
@@ -158,9 +154,7 @@ $button-size: 1.5rem;
 	color: $white;	
 	border: none;
 	cursor: pointer;
-	@media #{$small} {
-		display: none;
-	}
+	display: none;
 }
 .nav button {
 	border: none;
@@ -173,33 +167,6 @@ $button-size: 1.5rem;
 	position: relative;
 	top: 3px;
 	line-height: 0;
-}
-// When JavaScript is disabled, we hide the toggle button
-.no-js .nav .navtoggle {
-	display: none;
-}
-// When JavaScript is disabled, we show the menu
-.no-js .nav ul {
-	max-height: 30em;
-	overflow: hidden;
-}
-// When JavaScript is enabled, we hide the menu
-.js .nav ul {
-	max-height: 0;
-	overflow: hidden;
-	@media #{$small} {
-		max-height: 30em;
-	}
-}
-// Displaying the menu when the user has clicked on the button
-.js .nav .active + ul {		
-	max-height: 30em;
-	overflow: hidden;
-	-webkit-transition: max-height .4s;
-	-moz-transition: max-height .4s;
-	-o-transition: max-height .4s;
-	-ms-transition: max-height .4s;
-	transition: max-height .4s;
 }
 #main {
 	counter-reset: captions;
@@ -348,8 +315,7 @@ $button-size: 1.5rem;
 .article-author-side {
 	display: none;
 	.bio-photo {
-		max-width: 110px;
-		@include rounded(150px);
+		width: 100%;
 	}
 	@media #{$small} {
 		display: block;
@@ -360,11 +326,11 @@ $button-size: 1.5rem;
 		p,
 		.author-social {
 			display: block;
-			max-width: 125px;
+			width: 100%;
 		}
 		h3 {
-			margin-top: 10px;
-			margin-bottom: 10px;
+			margin-top: 0.3rem;
+			margin-bottom: 0rem;
 		}
 		p {
 			margin-bottom: 20px;
