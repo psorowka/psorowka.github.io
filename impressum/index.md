@@ -13,7 +13,7 @@ Lutterothstr. 86\\
 Telefon: 0157 77 59 86 47\\
 E-Mail: hello@sorowka.com\\
  \\
-Steuernummer: \\
-Umsatzsteuer-ID: \\
+Steuernummer: 45/233/00364\\
+Umsatzsteuer-ID: DE297762162\\
  \\
 Gerichtsstand ist Hamburg
